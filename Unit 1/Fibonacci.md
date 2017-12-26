@@ -8,7 +8,7 @@ int fibonaccil(int n)//递归实现
     if(n==0||n==1)return n;
     else return (fibonaccil(n-2)+fibonaccil(n-1));
 }
-                       //实际测试中发现当N达到48就会发生溢出,所以如果要计算比较大的Fibonacci数列就需要用数组来模拟加法
+//实际测试中发现当N达到48就会发生溢出,所以如果要计算比较大的Fibonacci数列就需要用数组来模拟加法
 int fibonaccil(int n)//递归转换为递推实现
 {
     int fib0=1,fib1=1,fib=0;
@@ -24,14 +24,15 @@ int fibonaccil(int n)//递归转换为递推实现
 ```
 
 ```python
-#python3递归在实际的运行中效果极其差，我测试了一下Fibonacci(60),在我的PC机器上运行，CPU I7-6700HQ,运行超过12分钟也没有计算出结果
+#python3递归在实际的运行中效果极其差，我测试了一下Fibonacci(60),在我的PC机器上运行，CPU I7-6700HQ,运行超过12分钟也
+#没有计算出结果
 def fibonaccil(n):     #level 1：
     if(n==0 or n==1):
         return n
     return (fibonaccil(n-2)+fibonaccil(n-1))
 
 def Fibonacci(n):      #level 10：
-#python3 递推实际测试Fibonacci(1000000) 用时17s，python存在长整形，内部实现是模拟数组类似，存储上限和内存有关系。
+#python3递推实际测试Fibonacci(1000000) 用时17s，python存在长整形，内部实现是模拟数组类似，存储上限和内存有关系。
     fib0=1
     fib1=1
     if n<=1:
