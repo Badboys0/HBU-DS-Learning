@@ -31,7 +31,7 @@ def fibonaccil(n):     #level 1：
     return (fibonaccil(n-2)+fibonaccil(n-1))
 
 def Fibonacci(n):      #level 50：
-实际测试#Fibonacci(1000000) 用时17s，足以简单递归和循环的区别。
+#实际测试Fibonacci(1000000) 用时17s，足以简单递归和循环的区别。
     fib0=1
     fib1=1
     if n<=1:
