@@ -30,6 +30,20 @@ def fibonaccil(n):     #level 1：
         return n
     return (fibonaccil(n-2)+fibonaccil(n-1))
 
+def Fibonacci(n):      #level 50：
+实际测试#Fibonacci(1000000) 用时17s，足以简单递归和循环的区别。
+    fib0=1
+    fib1=1
+    if n<=1:
+        return 1
+    i=0
+    while i<n-1:
+        i+=1
+        fib2=fib0+fib1
+        fib0=fib1
+        fib1=fib2
+    return fib2
+    
 def fibonaccil(n):     #level 99：
 #实际测试Fibonacci(1000000) 用时2s,emmm，性能max 参考博客 http://blog.csdn.net/ncafei/article/details/54176276
  lhm=[[0,1],[1,1]]
