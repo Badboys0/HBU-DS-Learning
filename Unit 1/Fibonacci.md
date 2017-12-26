@@ -24,13 +24,13 @@ int fibonaccil(int n)//循环实现
 ```
 
 ```python
-#在实际的运行中效果极其差，我测试了一下Fibonacci(60),在我的PC机器上运行，CPU I7-6700HQ,运行超过12分钟也没有计算出结果
+#python3在实际的运行中效果极其差，我测试了一下Fibonacci(60),在我的PC机器上运行，CPU I7-6700HQ,运行超过12分钟也没有计算出结果
 def fibonaccil(n):     #level 1：
     if(n==0 or n==1):
         return n
     return (fibonaccil(n-2)+fibonaccil(n-1))
 
-def Fibonacci(n):      #level 50：
+def Fibonacci(n):      #level 10：
 #实际测试Fibonacci(1000000) 用时17s，足以简单递归和循环的区别。
     fib0=1
     fib1=1
